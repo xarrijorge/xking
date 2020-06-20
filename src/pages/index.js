@@ -24,7 +24,7 @@ function IndexPage() {
 
   return (
     <div
-      className='layout'
+      className='homeLayout'
       style={{ 'background-image': `url(${background})` }}
     >
       <SEO title='Home' />
