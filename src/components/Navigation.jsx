@@ -3,10 +3,12 @@ import { Link } from 'gatsby'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import FacebookIcon from '@material-ui/icons/Facebook'
 
+import Logo from '../images/logo.png'
+
 const mainNav = (props) => (
   <div className='navigation'>
     <Link to='/' className='logo'>
-      <h3>xKing</h3>
+      <img src={Logo} alt='' />
     </Link>
     <div className='links'>
       <Link activeClassName='active' to='/' className='link'>

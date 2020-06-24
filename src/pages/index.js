@@ -32,19 +32,21 @@ function IndexPage() {
       <div className='home'>
         <div className='homeNav'>
           <Link
-            className='fashion'
+            className='homeLink'
             onMouseEnter={() => setBackground(fashion)}
             onMouseLeave={() => setBackground(main)}
           >
             Fashion
           </Link>
           <Link
+            className='homeLink'
             onMouseEnter={() => setBackground(lifeStyle)}
             onMouseLeave={() => setBackground(main)}
           >
             Lifestyle
           </Link>
           <Link
+            className='homeLink'
             to='food'
             onMouseEnter={() => setBackground(food)}
             onMouseLeave={() => setBackground(main)}
