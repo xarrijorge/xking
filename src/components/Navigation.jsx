@@ -9,19 +9,20 @@ const mainNav = (props) => (
       <h3>xKing</h3>
     </Link>
     <div className='links'>
-      <Link activeClassName='active' to='about'>
-        About
-      </Link>
-      <Link activeClassName='active' to='work'>
+      <Link activeClassName='active' to='/' className='link'>
         Work
       </Link>
-      <Link activeClassName='active' to='about'>
+      <Link activeClassName='active' to='about' className='link'>
+        About
+      </Link>
+      <Link activeClassName='active' to='contact' className='link'>
         Contact
       </Link>
       <a
         href='https://www.instagram.com/?hl=en'
         target='_blank'
         rel='noopener noreferrer'
+        className='icon'
       >
         <InstagramIcon />
       </a>
@@ -29,6 +30,7 @@ const mainNav = (props) => (
         href='https://web.facebook.com/'
         target='_blank'
         rel='noopener noreferrer'
+        className='icon'
       >
         <FacebookIcon />
       </a>

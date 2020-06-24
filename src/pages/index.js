@@ -45,6 +45,7 @@ function IndexPage() {
             Lifestyle
           </Link>
           <Link
+            to='food'
             onMouseEnter={() => setBackground(food)}
             onMouseLeave={() => setBackground(main)}
           >
