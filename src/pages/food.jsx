@@ -18,10 +18,10 @@ export default () => (
       <li className='vertLong'>
         <img src={food.icecream} alt='' />
       </li>
-      <li>
+      <li className='single'>
         <img src={food.soup} alt='' />
       </li>
-      <li>
+      <li className='single'>
         <img src={food.chorrillos} alt='' />
       </li>
       <li className='big'>
@@ -31,16 +31,16 @@ export default () => (
       <li className='vertLong'>
         <img src={food.meatball} alt='' />
       </li>
-      <li>
+      <li className='vertMid'>
         <img src={food.sandwich} alt='' />
       </li>
       <li className='vertLong'>
         <img src={food.salad} alt='' />
       </li>
-      <li>
+      <li className='single'>
         <img src={food.starter} alt='' />
       </li>
-      <li>
+      <li className='single'>
         <img src={food.steak} alt='' />
       </li>
     </ul>

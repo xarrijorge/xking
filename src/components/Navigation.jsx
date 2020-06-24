@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import FacebookIcon from '@material-ui/icons/Facebook'
+import MenuIcon from '@material-ui/icons/Menu'
 
 import Logo from '../images/logo.png'
 
-const mainNav = (props) => (
+const MainNav = (props) => (
   <div className='navigation'>
     <Link to='/' className='logo'>
       <img src={Logo} alt='' />
@@ -40,4 +41,18 @@ const mainNav = (props) => (
   </div>
 )
 
-export default mainNav
+const MobileNav = () => (
+  <div className='mobileNav'>
+    <img src={Logo} alt='' />
+    <MenuIcon />
+    <div className='sideNav'>
+      <ul>
+        <li>Work</li>
+        <li>About</li>
+        <li>contact</li>
+      </ul>
+    </div>
+  </div>
+)
+
+export { MainNav, MobileNav }

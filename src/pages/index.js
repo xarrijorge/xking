@@ -11,7 +11,7 @@ import '../styles/main.scss'
 
 import SEO from '../components/seo'
 // import Layout from '../components/Layout'
-import Navigation from '../components/Navigation'
+import { MainNav } from '../components/Navigation'
 
 function IndexPage() {
   const [background, setBackground] = useState(main)
@@ -28,13 +28,15 @@ function IndexPage() {
       style={{ 'background-image': `url(${background})` }}
     >
       <SEO title='Home' />
-      <Navigation />
+      <MainNav />
       <div className='home'>
         <div className='homeNav'>
           <Link
             className='homeLink'
             onMouseEnter={() => setBackground(fashion)}
+            // onTouchStart={() => setBackground(fashion)}
             onMouseLeave={() => setBackground(main)}
+            to='fashion'
           >
             Fashion
           </Link>
@@ -42,14 +44,15 @@ function IndexPage() {
             className='homeLink'
             onMouseEnter={() => setBackground(lifeStyle)}
             onMouseLeave={() => setBackground(main)}
+            to='lifestyle'
           >
             Lifestyle
           </Link>
           <Link
             className='homeLink'
-            to='food'
             onMouseEnter={() => setBackground(food)}
             onMouseLeave={() => setBackground(main)}
+            to='food'
           >
             Food
           </Link>

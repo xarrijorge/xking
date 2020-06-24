@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-import Navigation from './Navigation'
+import { MainNav, MobileNav } from './Navigation'
 
 export default (props) => (
   <div className='layout'>
-    <Navigation />
+    <MobileNav />
+    <MainNav />
     {props.children}
   </div>
 )
